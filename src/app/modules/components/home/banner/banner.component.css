@@ -1,0 +1,11 @@
+#default-carousel {
+  position: relative;
+  z-index: 1; /* Asegúrate de que sea menor que el menú */
+}
+img {
+  transition: transform 0.5s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}

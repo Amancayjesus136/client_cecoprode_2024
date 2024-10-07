@@ -1,0 +1,14 @@
+img {
+  transition: transform 0.5s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+.confetti {
+  position: absolute;
+  width: 10px; /* Tamaño del confeti */
+  height: 10px; /* Tamaño del confeti */
+  border-radius: 50%;
+  pointer-events: none; /* Evitar que el confeti interfiera con los clics */
+}
