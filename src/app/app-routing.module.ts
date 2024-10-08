@@ -11,6 +11,7 @@ import { MisionComponent } from './modules/pages/mision/mision.component';
 import { VisionComponent } from './modules/pages/vision/vision.component';
 import { SomosComponent } from './modules/pages/somos/somos.component';
 import { GaleriaComponent } from './modules/pages/galeria/galeria.component';
+import { ProyectosComponent } from './modules/pages/proyectos/proyectos.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'mision', component: MisionComponent },
   { path: 'quienes-somos', component: SomosComponent },
   { path: 'galeria', component: GaleriaComponent },
+  { path: 'proyectos', component: ProyectosComponent },
   { path: 'auth/login/cecoprodeves', component: LoginComponent },
   { path: 'auth/register/cecoprodeves', component: RegisterComponent },
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },

@@ -1,0 +1,7 @@
+@media (max-width: 768px) { /* Ajusta el ancho según tu diseño responsivo */
+  .responsive-img {
+    width: 100%;
+    height: 100%; /* Asegúrate de que el contenedor tenga un alto definido */
+    object-fit: cover; /* Mantiene la relación de aspecto y cubre todo el espacio */
+  }
+}
