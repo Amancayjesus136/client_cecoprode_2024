@@ -10,12 +10,14 @@ import { AuthGuard } from './auth.guard';
 import { MisionComponent } from './modules/pages/mision/mision.component';
 import { VisionComponent } from './modules/pages/vision/vision.component';
 import { SomosComponent } from './modules/pages/somos/somos.component';
+import { GaleriaComponent } from './modules/pages/galeria/galeria.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'vision', component: VisionComponent },
   { path: 'mision', component: MisionComponent },
   { path: 'quienes-somos', component: SomosComponent },
+  { path: 'galeria', component: GaleriaComponent },
   { path: 'auth/login/cecoprodeves', component: LoginComponent },
   { path: 'auth/register/cecoprodeves', component: RegisterComponent },
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },

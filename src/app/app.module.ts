@@ -27,6 +27,8 @@ import { PerfileComponent } from './modules/admin/pages/profile/perfile/perfile.
 import { MisionComponent } from './modules/pages/mision/mision.component';
 import { VisionComponent } from './modules/pages/vision/vision.component';
 import { SomosComponent } from './modules/pages/somos/somos.component';
+import { ProyectosComponent } from './modules/pages/proyectos/proyectos.component';
+import { GaleriaComponent } from './modules/pages/galeria/galeria.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +51,8 @@ import { SomosComponent } from './modules/pages/somos/somos.component';
     MisionComponent,
     VisionComponent,
     SomosComponent,
+    ProyectosComponent,
+    GaleriaComponent,
   ],
   imports: [
     BrowserModule,
