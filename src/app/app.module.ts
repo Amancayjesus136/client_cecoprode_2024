@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { HomeComponent } from './modules/pages/home/home.component';
-import { WorkComponent } from './modules/pages/work/work.component';
 import { FooterComponent } from './modules/layouts/footer/footer.component';
 import { NavigationComponent } from './modules/layouts/navigation/navigation.component';
 import { MenuComponent } from './modules/layouts/menu/menu.component';
@@ -27,6 +26,7 @@ import { ProfileEditComponent } from './modules/admin/pages/profile/partials/pro
 import { PerfileComponent } from './modules/admin/pages/profile/perfile/perfile.component';
 import { MisionComponent } from './modules/pages/mision/mision.component';
 import { VisionComponent } from './modules/pages/vision/vision.component';
+import { SomosComponent } from './modules/pages/somos/somos.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +39,6 @@ import { VisionComponent } from './modules/pages/vision/vision.component';
     CategoryComponent,
     FooterComponent,
     NavigationComponent,
-    WorkComponent,
     DashboardComponent,
     ModuleComponent,
     MenuSidebarComponent,
@@ -49,6 +48,7 @@ import { VisionComponent } from './modules/pages/vision/vision.component';
     PerfileComponent,
     MisionComponent,
     VisionComponent,
+    SomosComponent,
   ],
   imports: [
     BrowserModule,

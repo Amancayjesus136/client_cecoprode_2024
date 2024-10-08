@@ -9,13 +9,15 @@ import { ProfileViewComponent } from './modules/admin/pages/profile/partials/pro
 import { AuthGuard } from './auth.guard';
 import { MisionComponent } from './modules/pages/mision/mision.component';
 import { VisionComponent } from './modules/pages/vision/vision.component';
+import { SomosComponent } from './modules/pages/somos/somos.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'vision', component: VisionComponent },
   { path: 'mision', component: MisionComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
+  { path: 'quienes-somos', component: SomosComponent },
+  { path: 'auth/login/cecoprodeves', component: LoginComponent },
+  { path: 'auth/register/cecoprodeves', component: RegisterComponent },
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'module', component: ModuleComponent, canActivate: [AuthGuard] },
   { path: 'profile', component: ProfileViewComponent, canActivate: [AuthGuard] },
