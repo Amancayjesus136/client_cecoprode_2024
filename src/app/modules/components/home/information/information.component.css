@@ -13,3 +13,9 @@ img:hover {
   object-fit: contain;
   border-radius: 0.5rem;
 }
+@media (max-width: 640px) { /* Ajustes para pantallas pequeñas */
+  #popup-modal2 .relative {
+    width: 100%;
+    height: auto; /* Permite que la altura sea automática */
+  }
+}
