@@ -20,7 +20,7 @@ export class MenuComponent implements OnInit {
   }
 
   initThemeToggle() {
-    if (localStorage.getItem('color-theme') === 'dark') {
+    if (localStorage.getItem('color-theme') === 'light') {
       document.documentElement.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
