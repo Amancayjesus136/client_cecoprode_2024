@@ -11,16 +11,14 @@ export class InformationComponent implements OnInit, OnDestroy {
   currentIndex: number = 0;
   images: string[] = [
     'assets/img/banner3.png',
-    'assets/img/banner1.jpeg',
-    'assets/img/banner2.jpeg'
   ];
   intervalId: any;
   jsConfetti: JSConfetti;
-  confettiLaunches: number = 0; // Contador de lanzamientos de confeti
-  maxConfettiLaunches: number = 3; // Máximo de veces que se lanzará el confeti
+  confettiLaunches: number = 0;
+  maxConfettiLaunches: number = 3;
 
   constructor() {
-    this.jsConfetti = new JSConfetti(); // Inicializar JSConfetti
+    this.jsConfetti = new JSConfetti();
   }
 
   ngOnInit(): void {
@@ -32,10 +30,9 @@ export class InformationComponent implements OnInit, OnDestroy {
     clearInterval(this.intervalId);
   }
 
-  // Mostrar modal y lanzar confeti
   showModal(): void {
     this.isModalVisible = true;
-    this.launchConfetti(); // Lanzar confeti cuando se muestra el modal
+    this.launchConfetti();
   }
 
   closeModal(): void {
@@ -48,15 +45,14 @@ export class InformationComponent implements OnInit, OnDestroy {
     }, 3000);
   }
 
-  // Función para lanzar confeti varias veces (2 o 3 veces)
   launchConfetti(): void {
     const confettiInterval = setInterval(() => {
       if (this.confettiLaunches < this.maxConfettiLaunches) {
         this.jsConfetti.addConfetti();
-        this.confettiLaunches++; // Incrementar contador después de cada lanzamiento
+        this.confettiLaunches++;
       } else {
-        clearInterval(confettiInterval); // Detener el lanzamiento después de 3 veces
+        clearInterval(confettiInterval);
       }
-    }, 1000); // Retraso de 1 segundo entre lanzamientos de confeti
+    }, 1000);
   }
 }
